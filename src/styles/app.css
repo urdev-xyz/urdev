@@ -28,6 +28,11 @@ what's here to work the way you'd like it to.
     --color-border: #c7d5d8;
     --color-bg: #f5f5f5;
 
+    --blue: #4299E1;
+    --blue-light: #7BC3FF;
+    --blue-lightest: #EBF8FF;
+
+
     /* Fonts */
     --font-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     --font-serif: Georgia, Times, serif;
@@ -221,7 +226,6 @@ samp {
     font-family: monospace, monospace;
     font-size: 1em;
 }
-button,
 input,
 optgroup,
 select,
@@ -469,11 +473,6 @@ h1 {
     font-size: 4rem;
     font-weight: 700;
 }
-@media (max-width: 500px) {
-    h1 {
-        font-size: 2rem;
-    }
-}
 
 h2 {
     margin: 1.5em 0 0.5em 0;
@@ -668,95 +667,7 @@ h6 {
     background: var(--color-base);
 }
 
-.site-nav-item {
-    display: inline-block;
-    padding: 5px 10px;
-    color: #fff;
-    opacity: 0.7;
-}
 
-.site-nav-item:hover {
-    text-decoration: none;
-    opacity: 1;
-}
-
-.site-nav-icon {
-    height: 15px;
-    margin: -5px 0 0;
-}
-
-.site-logo {
-    height: 25px;
-}
-
-.site-mast {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.site-mast-right {
-    display: flex;
-    align-items: center;
-    margin: 0 -10px 0 20px;
-}
-
-.site-mast-right .site-nav-item:last-child {
-    padding-right: 0;
-}
-
-.site-banner {
-    max-width: 80%;
-    margin: 0 auto;
-    padding: 10vw 0;
-    text-align: center;
-}
-
-.site-banner-title {
-    margin: 0;
-    padding: 0;
-    color: #fff;
-    font-size: 4rem;
-    line-height: 1.3em;
-}
-
-.site-banner-desc {
-    margin: 5px 0 0 0;
-    padding: 0;
-    font-size: 2.4rem;
-    line-height: 1.3em;
-    opacity: 0.7;
-}
-
-.site-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 15px 0 0 0;
-}
-
-.site-nav-left {
-    margin: 0 20px 0 -10px;
-}
-
-.site-nav-right {
-    margin: 0 -10px 0 20px;
-}
-
-.site-nav-button {
-    display: inline-block;
-    padding: 5px 10px;
-    border: #fff 1px solid;
-    color: #fff;
-    font-size: 1.3rem;
-    line-height: 1em;
-    border-radius: var(--radius);
-    opacity: 0.7;
-}
-
-.site-nav-button:hover {
-    text-decoration: none;
-}
 
 /* Main
 /* ---------------------------------------------------------- */
