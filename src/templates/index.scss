@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');$black: #4A5568;
+$blue: #4299E1;
+$blue-light: #7BC3FF;
+$blue-lightest: #EBF8FF;
+
+$nunito: 'Nunito', sans-serif;
+.container {
+    top: 60px;
+    z-index: 0;
+}
+.home-header {
+    width: 100%;
+    height: 70vh;
+    max-height: 500px;
+
+    font-family: $nunito;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+    animation: fadeIn 1s forwards;
+        animation-fill-mode: initial;
+
+    h1 {
+        color: $blue;
+        font-size: 25rem;
+        font-weight: 700;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        line-height: .7;
+        
+        animation: bounce 3s infinite ease-in-out forwards;
+
+    }
+    h2 {
+        font-size: 3rem;
+        text-align: center;
+        padding: 0;
+        margin: 30px 0;
+
+    }
+    .button-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 500px;
+        .button-left {
+            width: 60%;
+            background: $blue;
+            color: white;
+            margin-right: 12px;
+        }
+        .button-right {  
+            width: 40%;
+            background: none;
+            border: 3px solid $blue;
+            color: $blue;
+        }
+    }
+    button {
+        font-family: $nunito;
+        font-weight: 700;
+        border-radius: 15rem;
+        height: 45px;
+    }
+}
+
+@keyframes bounce {
+        0%   { transform: translateY(0); }
+        50%  { transform: translateY(-20px); }
+        100% { transform: translateY(0); }
+}

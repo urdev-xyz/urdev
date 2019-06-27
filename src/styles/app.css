@@ -673,7 +673,7 @@ h6 {
 /* ---------------------------------------------------------- */
 
 .site-main {
-    padding: 4vw 0;
+    padding: 60px 0 4vw 0;
 }
 
 /* Index
@@ -926,4 +926,15 @@ h6 {
 
 .site-foot-nav-right a:last-child {
     padding-right: 0;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+        z-index: 1;
+    }
 }
