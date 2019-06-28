@@ -24,12 +24,28 @@ const Index = ({ data, location, pageContext }) => {
             <Layout isHome={true}>
                 <div className="container">
                     <div className="home-header">
-                    <h1>ur</h1>
-                    <h2>Development Made Simple</h2>
-                    <div className="button-container">
-                        <button className="button-left">Get Started</button>
-                        <button className="button-right">Learn More</button>
+                        <h1>ur</h1>
+                        <h2>Development Made Simple</h2>
+                        <div className="button-container">
+                            <button className="button-left">Get Started</button>
+                            <button className="button-right">Learn More</button>
+                        </div>
                     </div>
+                    <div className="home-section">
+                        <h1>Get Started</h1>
+                        <div className="wwd-container">
+                            <div className="wwd-half wwd-left">
+                                <div className="wwd-image">www.</div>
+                                <h1>Web Development</h1>
+                                <button>Start Here</button>
+                            </div>
+                            <div className="wwd-half wwd-right">
+                            <div className="wwd-image">APP</div>
+                                <h1>App Development</h1>
+                                <button>Start Here</button>
+                            </div>
+                        </div>
+                        <h2>Not quite what you need?</h2><h2>Call us at 404-901-3447</h2><h2>or Email us at contact@urdev.xyz</h2>
                     </div>
                 </div>
             </Layout>
