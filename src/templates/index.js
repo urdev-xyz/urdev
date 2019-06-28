@@ -45,7 +45,7 @@ const Index = ({ data, location, pageContext }) => {
                                 <button>Start Here</button>
                             </div>
                         </div>
-                        <h2>Not quite what you need?</h2><h2>Call us at <span>404-901-3447</span></h2><h2>or Email us at <span>walker@urdev.xyz</span></h2>
+                        <h2>Not quite what you need?</h2><h2>Call us at <span>404-901-3447</span></h2><h2>or Email us at <span>contact@ur.dev</span></h2>
                     </div>
                 </div>
             </Layout>
