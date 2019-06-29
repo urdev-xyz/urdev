@@ -94,6 +94,7 @@ $nunito: 'Nunito', sans-serif;
         color: white;
         display: flex;
         margin-bottom: 15px;
+        
 
         button {
             font-family: $nunito;
@@ -103,32 +104,50 @@ $nunito: 'Nunito', sans-serif;
         }
 
         .wwd-half {
+            position: relative;
             height: 100%;
             width: 50%;
+
+            z-index: 0;
 
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat !important;
+
+            .wwd-background-tint {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                opacity: 0.90;
+            }
+            .wwd-image {
+                z-index: 1;
+            }
             h1 {
                 color: inherit;
+                z-index: 1;
             }
             button {
                 width: 70%;
                 color: white;
                 box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+                z-index: 1;
+
 
             }
         }
         
         .wwd-left {
-            background: $blue;
             button {
                 background: $blue-light;
             }
         }
         .wwd-right {
-            background: $blue-light;
             button {
                 background: $blue;
             }

@@ -32,11 +32,29 @@ class DefaultLayout extends React.Component {
         const site = props.data.allGhostSettings.edges[0].node
         this.state = {
             site:  props.data.allGhostSettings.edges[0].node,
-            isActive: false
+            isActive: false,
+            navbarStyles: {}
 
         }
 
 
+    }
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll);
+      }
+    
+      componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
+      }
+
+    handleScroll = () => {
+        if (window.pageYOffset > 10) {
+            this.setState({ navbarStyles: { boxShadow: `2px 4px 4px rgba(0, 0, 0, 0.15)` } })
+        }
+        else {
+            this.setState({ navbarStyles: { boxShadow: `none` } })
+        }
     }
 
     toggleButton = () => {
@@ -57,7 +75,7 @@ class DefaultLayout extends React.Component {
                 <div className="viewport">
         
                     <div className="viewport-top">
-                        <nav>
+                        <nav style={this.state.navbarStyles}>
                             <div className="logo"><h1>urdev</h1></div>
                             <Navigation data={this.state.site.navigation} addClass="nav-desktop" navClass="site-nav-item" />
                             <div className="contact-button nav-desktop"><button>Contact</button></div>

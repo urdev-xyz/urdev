@@ -7,6 +7,10 @@ import { MetaData } from '../components/common/meta'
 
 import './index.scss'
 
+import webdev from '../../static/images/webdev.jpeg'
+import appdev from '../../static/images/appdev.jpeg'
+
+
 /**
 * Main index page (home page)
 *
@@ -32,14 +36,16 @@ const Index = ({ data, location, pageContext }) => {
                         </div>
                     </div>
                     <div className="home-section">
-                        <h1>Get Started</h1>
+                        <h1>What We Do</h1>
                         <div className="wwd-container">
-                            <div className="wwd-half wwd-left">
+                            <div className="wwd-half wwd-left" style={{backgroundImage: `url(${webdev})`}}>
+                                <div className="wwd-background-tint" style={{background: '#4299E1'}}></div>
                                 <div className="wwd-image">www.</div>
                                 <h1>Web Development</h1>
                                 <button>Start Here</button>
                             </div>
-                            <div className="wwd-half wwd-right">
+                            <div className="wwd-half wwd-right" style={{backgroundImage: `url(${appdev})`}}>
+                            <div className="wwd-background-tint" style={{background: '#7BC3FF'}}></div>
                             <div className="wwd-image">APP</div>
                                 <h1>App Development</h1>
                                 <button>Start Here</button>
