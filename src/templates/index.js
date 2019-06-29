@@ -10,6 +10,10 @@ import './index.scss'
 
 import webdev from '../../static/images/webdev.jpeg'
 import appdev from '../../static/images/appdev.jpeg'
+import design from '../../static/images/design.jpeg'
+import seo from '../../static/images/seo.jpeg'
+import logo from '../../static/images/logo.png'
+
 import backgroundVid from '../../static/video/bg3.mp4'
 
 
@@ -86,16 +90,20 @@ class Index extends React.Component {
                                     </div>
                                 </div>
                                 <div className="wwd-container-4c">
-                                    <div className="wwd-item" id="wwd-item-1">
+                                    <div className="wwd-item"  style={{backgroundImage: `url(${design})`}}>
+                                        <div className="wwd-item-tint" id="wwd-item-1" ></div>
                                         <h1>Design</h1>
                                     </div>
-                                    <div className="wwd-item" id="wwd-item-2">
+                                    <div className="wwd-item" style={{backgroundImage: `url(${seo})`}}>
+                                        <div className="wwd-item-tint" id="wwd-item-2" ></div>
                                         <h1>Branding</h1>
                                     </div>
-                                    <div className="wwd-item" id="wwd-item-3">
+                                    <div className="wwd-item" style={{backgroundImage: `url(${logo})`}}>
+                                        <div className="wwd-item-tint" id="wwd-item-3" ></div>
                                         <h1>Logo</h1>
                                     </div>
-                                    <div className="wwd-item" id="wwd-item-4">
+                                    <div className="wwd-item"  style={{backgroundImage: `url(${seo})`}}>
+                                        <div className="wwd-item-tint" id="wwd-item-4" ></div>
                                         <h1>SEO</h1>
                                     </div>
                                 </div>
