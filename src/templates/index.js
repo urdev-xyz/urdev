@@ -9,6 +9,7 @@ import './index.scss'
 
 import webdev from '../../static/images/webdev.jpeg'
 import appdev from '../../static/images/appdev.jpeg'
+import backgroundVid from '../../static/video/bg3.mp4'
 
 
 /**
@@ -54,6 +55,9 @@ class Index extends React.Component {
                     <Layout isHome={true}>
                         <div className="container">
                             <div className="home-header">
+                                <div className="home-header-background">
+                                    <video src={backgroundVid} autoPlay={true} muted={true} loop={true}></video>
+                                </div>
                                 <h1>ur</h1>
                                 <h2>Development Made Simple</h2>
                                 <div className="button-container">
