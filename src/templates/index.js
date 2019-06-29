@@ -5,6 +5,7 @@ import { graphql } from 'gatsby'
 import { Layout, PostCard, Pagination } from '../components/common'
 import { MetaData } from '../components/common/meta'
 
+
 import './index.scss'
 
 import webdev from '../../static/images/webdev.jpeg'
@@ -100,6 +101,18 @@ class Index extends React.Component {
                                 </div>
                                 <h2>Looking for something else?</h2><h2>Call us at <span>404-901-3447</span></h2><h2>or Email us at <span>contact@ur.dev</span></h2>
                             </div>
+                            <div className="home-section">
+                                <h1>Recent Articles</h1>
+                                <div className="ra-container">
+                                    {this.state.posts.slice(0, 3).map(({ node }) => (
+                                        // The tag below includes the markup for each post - components/common/PostCard.js
+                                    <PostCard key={node.id} post={node} />
+                                    ))}
+                                    <div className="ra-viewmore">
+                                        <h1>View All</h1>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </Layout>
                 </>
@@ -127,7 +140,7 @@ export const pageQuery = graphql`
     allGhostPost(
         sort: { order: DESC, fields: [published_at] },
         limit: $limit,
-        skip: $skip
+        skip: $skip,
     ) {
       edges {
         node {
