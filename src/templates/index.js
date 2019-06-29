@@ -34,6 +34,9 @@ const Index = ({ data, location, pageContext }) => {
                             <button className="button-left">Get Started</button>
                             <button className="button-right">Learn More</button>
                         </div>
+                        <div className="arrow-container">
+                            <svg className="down-arrow" xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" width="35px" height="40px" viewBox="0 0 960 560" enable-background="new 0 0 960 560" class="fadeout"><g id="Rounded_Rectangle_33_copy_4_1_"><path d="M480,344.181L268.869,131.889c-15.756-15.859-41.3-15.859-57.054,0c-15.754,15.857-15.754,41.57,0,57.431l237.632,238.937   c8.395,8.451,19.562,12.254,30.553,11.698c10.993,0.556,22.159-3.247,30.555-11.698l237.631-238.937   c15.756-15.86,15.756-41.571,0-57.431s-41.299-15.859-57.051,0L480,344.181z"></path></g></svg>
+                        </div>
                     </div>
                     <div className="home-section">
                         <h1>What We Do</h1>
@@ -51,7 +54,21 @@ const Index = ({ data, location, pageContext }) => {
                                 <button>Start Here</button>
                             </div>
                         </div>
-                        <h2>Not quite what you need?</h2><h2>Call us at <span>404-901-3447</span></h2><h2>or Email us at <span>contact@ur.dev</span></h2>
+                        <div className="wwd-container-4c">
+                            <div className="wwd-item" id="wwd-item-1">
+                                <h1>Design</h1>
+                            </div>
+                            <div className="wwd-item" id="wwd-item-2">
+                                <h1>Branding</h1>
+                            </div>
+                            <div className="wwd-item" id="wwd-item-3">
+                                <h1>Logo</h1>
+                            </div>
+                            <div className="wwd-item" id="wwd-item-4">
+                                <h1>SEO</h1>
+                            </div>
+                        </div>
+                        <h2>Looking for something else?</h2><h2>Call us at <span>404-901-3447</span></h2><h2>or Email us at <span>contact@ur.dev</span></h2>
                     </div>
                 </div>
             </Layout>
