@@ -48,10 +48,10 @@ class DefaultLayout extends React.Component {
 
     handleScroll = () => {
         if (window.pageYOffset > 10) {
-            this.setState({ navbarStyles: { boxShadow: `2px 4px 4px rgba(0, 0, 0, 0.15)` } })
+            this.setState({ navbarStyles: { boxShadow: `2px 4px 4px rgba(0, 0, 0, 0.15)`,background: '#fff' } })
         }
         else {
-            this.setState({ navbarStyles: { boxShadow: `none` } })
+            this.setState({ navbarStyles: { boxShadow: `none`,background: 'none' } })
         }
     }
 

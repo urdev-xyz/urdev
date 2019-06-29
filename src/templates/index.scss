@@ -28,13 +28,15 @@ $nunito: 'Nunito', sans-serif;
 
     .home-header-background {
         position: absolute;
-        height: 100%;
+        top: -50/px;
+
+        height: 125%;
         width: 100%;
         z-index: 0;
 
         video {
             height: 100%;
-            opacity: .3;
+            opacity: .15;
         }
         video::-internal-media-controls-overlay-cast-button {
             display: none;
