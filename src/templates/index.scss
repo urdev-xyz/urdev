@@ -36,6 +36,9 @@ $nunito: 'Nunito', sans-serif;
             height: 100%;
             opacity: .3;
         }
+        video::-internal-media-controls-overlay-cast-button {
+            display: none;
+        }
     }
     *{
         z-index: 1;
