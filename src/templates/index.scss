@@ -11,9 +11,8 @@ $nunito: 'Nunito', sans-serif;
 }
 .home-header {
     width: 100%;
-    height: 100vh;
+    height: 95vh;
     min-height: 400px;
-    margin-bottom: 5vh;
 
     font-family: $nunito;
 
@@ -21,7 +20,7 @@ $nunito: 'Nunito', sans-serif;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 60px 20px;
+    padding: 0px 20px 30px 20px;
     animation: fadeIn 1s forwards;
         animation-fill-mode: initial;
 
@@ -49,7 +48,7 @@ $nunito: 'Nunito', sans-serif;
         justify-content: center;
         width: 100%;
         max-width: 500px;
-        margin-bottom: 10vh;
+        margin-bottom: 20vh;
         .button-left {
             width: 60%;
             background: $blue;
@@ -84,6 +83,9 @@ $nunito: 'Nunito', sans-serif;
             transform: translateY(2px);
         }
     }
+    .down-arrow-hide {
+        animation: fadeout .5s forwards;
+    }
 }
 
 @keyframes bounce {
@@ -91,7 +93,14 @@ $nunito: 'Nunito', sans-serif;
         50%  { transform: translateY(-20px); }
         100% { transform: translateY(0); }
 }
-
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
 //=================================================================
 .home-section {
     display: flex;

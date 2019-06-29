@@ -28,8 +28,6 @@ import './index.scss'
 class DefaultLayout extends React.Component {
     constructor(props) {
         super();
-        console.log(props.data.allGhostSettings.edges[0].node)
-        const site = props.data.allGhostSettings.edges[0].node
         this.state = {
             site:  props.data.allGhostSettings.edges[0].node,
             isActive: false,
