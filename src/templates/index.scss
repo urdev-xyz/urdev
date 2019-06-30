@@ -180,7 +180,7 @@ $nunito: 'Nunito', sans-serif;
             }
             button {
                 width: 70%;
-                color: white;
+                background: white;
                 box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
                 z-index: 1;
 
@@ -190,12 +190,12 @@ $nunito: 'Nunito', sans-serif;
         
         .wwd-left {
             button {
-                background: $blue-light;
+                color: $blue;
             }
         }
         .wwd-right {
             button {
-                background: $blue;
+                color: $blue-light;
             }
         }
     }
@@ -206,7 +206,7 @@ $nunito: 'Nunito', sans-serif;
         height: auto;
         width: 100%;
 
-        margin: 15px 0;
+        margin: 5px 0 25px 0;
 
         .wwd-item {
             position: relative;

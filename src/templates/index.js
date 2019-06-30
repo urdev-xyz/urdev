@@ -61,7 +61,7 @@ class Index extends React.Component {
                         <div className="container">
                             <div className="home-header">
                                 <div className="home-header-background">
-                                    <video src={backgroundVid} autoPlay={true} muted={true} loop={true}></video>
+                                    <video src={backgroundVid} playsInline autoPlay={true} muted={true} loop={true}></video>
                                 </div>
                                 <h1>ur</h1>
                                 <h2>Development Made Simple</h2>
@@ -96,7 +96,7 @@ class Index extends React.Component {
                                     </div>
                                     <div className="wwd-item" style={{backgroundImage: `url(${seo})`}}>
                                         <div className="wwd-item-tint" id="wwd-item-2" ></div>
-                                        <h1>Branding</h1>
+                                        <h1>Social</h1>
                                     </div>
                                     <div className="wwd-item" style={{backgroundImage: `url(${logo})`}}>
                                         <div className="wwd-item-tint" id="wwd-item-3" ></div>
