@@ -128,7 +128,6 @@ $nunito: 'Nunito', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 900px;
     width: 100%;
     margin-bottom: 50px; 
     h1 {
@@ -266,7 +265,64 @@ $nunito: 'Nunito', sans-serif;
             color: $blue;
         }
     }
+    // ----------------------------------------------------------------
 
+    .oa-container {
+        display: flex;
+        width: 100%;
+        max-width: 1400px;
+        display: flex;
+        padding-left: 10px; 
+
+
+        .oa-item {
+            background: $blue-lightest;
+            padding: 15px 0;
+            width: 33.333333%;
+            display: flex;
+            margin-right: 10px; 
+            border-radius: .9rem;
+            .oa-item-left {
+                display: flex;
+                justify-content: center;
+                width: 20%;
+                svg {
+                    fill: $blue;
+                }
+            }
+            .oa-item-right {
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h1 {
+                    width: 100%;
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 1.5rem;
+                    flex-grow: 1;
+                }
+                a {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 1400px){
+        .oa-container {
+            padding: 0 15px;
+            flex-wrap: wrap;
+
+            .oa-item {
+                width: 100%;
+                margin: 0 0 15px 0;
+                padding-right: 15px;
+            }
+        }
+    }
+
+    // ----------------------------------------------------------------
     .ra-container {
         width: 100%;
         display: flex;
@@ -327,7 +383,7 @@ $nunito: 'Nunito', sans-serif;
 
 @media screen and (max-width: 900px) {
     .home-section {
-        height: auto;
+        height: auto !important;
 
         .wwd-container {
             flex-direction: column;

@@ -27,6 +27,9 @@ nav {
         align-items: center;
         justify-content: center;
         margin: 0;
+        a {
+            text-decoration: none;
+        }
         h1 {
             text-align: center;
             color: $blue;
