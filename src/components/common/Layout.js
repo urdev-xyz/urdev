@@ -106,7 +106,7 @@ class DefaultLayout extends React.Component {
 
                                 </div>
                                 <div className="site-foot-nav-right">
-                                    <Link to="/">{this.state.site.title}</Link> © 2019 &mdash;
+                                    <Link to="/">{this.state.site.title}</Link> © 2019
 
                                 </div>
                             </div>
