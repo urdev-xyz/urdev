@@ -118,7 +118,7 @@ class Index extends React.Component {
                                         </div>
                                         <div className="oa-item-right">
                                             <h1>Design</h1>
-                                            <p>In all honestly this is not a production ready library, but if you are a developer looking to experiment with the ideas put forth by Samsung then you should definitely keep an eye on this repo.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                             <Link to="/design">Learn More</Link>
                                         </div>
                                     </div>
@@ -128,7 +128,7 @@ class Index extends React.Component {
                                         </div>
                                         <div className="oa-item-right">
                                             <h1>Development</h1>
-                                            <p>In all honestly this is not a production ready library, but if you are a developer looking to experiment with the ideas put forth by Samsung then you should definitely keep an eye on this repo.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                             <Link to="/design">Learn More</Link>
                                         </div>
                                     </div>
@@ -138,7 +138,7 @@ class Index extends React.Component {
                                         </div>
                                         <div className="oa-item-right">
                                             <h1>Launch</h1>
-                                            <p>In all honestly this is not a production ready library, but if you are a developer </p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                             <Link to="/design">Learn More</Link>
                                         </div>
                                     </div>
