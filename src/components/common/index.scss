@@ -191,3 +191,37 @@ nav {
         }
     }
 }
+
+.site-foot {
+    border-top: 5px solid $blue-light;
+    background: $blue;
+    color: white;
+    padding: 0;
+    .site-foot-nav-left {
+        justify-content: flex-start;
+        padding: 15px;
+    }
+    .Navbar {
+        .site-foot-nav-item {
+            font-size: 1.5rem;
+            margin-right: 15px;
+            color: white;
+
+        }
+    }
+
+    .logo {
+        a {
+            text-decoration: none;
+        }
+        h1 {
+            font-family: $nunito;
+            color: white;
+            text-align: left;
+            font-weight: 700;
+            margin: 0;
+
+        }
+    }
+    
+}
