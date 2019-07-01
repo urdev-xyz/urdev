@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');$black: #4A5568;
 /* App.css
 /* ---------------------------------------------------------- /*
 
@@ -699,6 +700,9 @@ h6 {
 .post-card {
     color: inherit;
     text-decoration: none;
+    font-family: nunito, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 .post-card:hover {
@@ -709,18 +713,20 @@ h6 {
     margin: 0 0 5px 0;
     font-size: 1.4rem;
     line-height: 1.15em;
-    color: var(--color-secondary);
+    color: #7BC3FF;
 }
 
 
 .post-card-title {
     margin: 0 0 10px 0;
     padding: 0;
+    font-weight: 700;
 }
 
 .post-card-excerpt {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     line-height: 1.55em;
+    flex-grow: 1;
 }
 
 .post-card-image {
@@ -736,7 +742,10 @@ h6 {
     align-items: center;
     justify-content: space-between;
     margin: 10px 0 0 0;
+    padding: 10px;
     color: var(--color-secondary);
+    background: #EDF2F7;
+    border-radius: .8rem; 
 }
 
 .post-card-footer-left {
@@ -757,6 +766,8 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid #7BC3FF;
+    padding: 2px;
 }
 
 .post-card-avatar .author-profile-image {
