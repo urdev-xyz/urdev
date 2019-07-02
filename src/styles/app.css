@@ -530,6 +530,10 @@ h6 {
 }
 
 .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     margin: 0 auto;
     font-size: 2rem;
     line-height: 1.7em;
@@ -542,8 +546,8 @@ h6 {
 }
 
 .post-full-content {
-    max-width: 720px;
-    margin: 0 auto;
+    max-width: 1000px;
+    margin: 0 25px;
     background: #fff;
 }
 

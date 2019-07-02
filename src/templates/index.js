@@ -118,7 +118,7 @@ class Index extends React.Component {
                                         </div>
                                         <div className="oa-item-right">
                                             <h1>Design</h1>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <p>Establishing a website that engages users starts with great design. We begin the process learning your brand. We then translate your positioning into an online brand identity, defining palettes, fonts, imagery, graphics and an overall aesthetic true to your company.</p>
                                             <Link to="/design">Learn More</Link>
                                         </div>
                                     </div>
@@ -128,7 +128,7 @@ class Index extends React.Component {
                                         </div>
                                         <div className="oa-item-right">
                                             <h1>Development</h1>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <p>Some developers overly complicate the build. Sure, some sites are certainly more complex than others, but we we try hard to keep things simple. We scope the job, set a timeline and budget, then we get down to work, sharing progress along the way. </p>
                                             <Link to="/design">Learn More</Link>
                                         </div>
                                     </div>
@@ -138,7 +138,7 @@ class Index extends React.Component {
                                         </div>
                                         <div className="oa-item-right">
                                             <h1>Launch</h1>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <p>We pride ourselves on launching responsive sites on time, each and every time. Post launch, we offer free troubleshooting for 30 days. And while we optimize for search, we’d love to keep working with you to help improve your ranking for key words. </p>
                                             <Link to="/design">Learn More</Link>
                                         </div>
                                     </div>
