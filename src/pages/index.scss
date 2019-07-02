@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');$black: #4A5568;
+$blue: #4299E1;
+$blue-light: #7BC3FF;
+$blue-lightest: #EBF8FF;
+
+$nunito: 'Nunito', sans-serif;
+
+.contact-container {
+    display: flex;
+    padding: 15px;
+
+    .contact-container-left {
+        width: 50%;
+        background: #7BC3FF;
+    }
+    .contact-container-right {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .contact-container {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        .contact-container-left {
+            width: 100%;
+            min-height: 200px;
+        }
+        .contact-container-right {
+            width: 100%;
+        }
+    }
+}

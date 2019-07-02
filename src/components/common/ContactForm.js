@@ -8,6 +8,7 @@ class ContactForm extends React.Component {
     render() {
         return (
             <div className="contact-form">
+                <h1>Get In Touch</h1>
                 <form
                 name="contact"
                 method="post"
@@ -17,19 +18,19 @@ class ContactForm extends React.Component {
                 <input type="hidden" name="bot-field" />
                 <input type="hidden" name="form-name" value="contact" />
                 <div>
-                    <label>Full Name: <input type="text" name="name" /></label>   
+                    <label>Full Name <input type="text" name="name" /></label>   
                 </div>
                 <div>
-                    <label>Company: <input type="company" name="company" /></label>
+                    <label>Company <input type="company" name="company" /></label>
                 </div>
                 <div>
-                    <label>Email: <input type="email" name="email" /></label>
+                    <label>Email <input type="email" name="email" /></label>
                 </div>
                 <div>
-                    <label>Phone: <input type="phone" name="phone" /></label>
+                    <label>Phone <input type="phone" name="phone" /></label>
                 </div>
                 <div>
-                    <label>Message: <textarea name="message"></textarea></label>
+                    <label>Message <textarea name="message"></textarea></label>
                 </div>
                 <div>
                     <button type="submit">Send</button>
