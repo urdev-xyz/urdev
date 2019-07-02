@@ -8,7 +8,7 @@ class ContactForm extends React.Component {
     render() {
         return (
             <div className="contact-form">
-                <h1>Get In Touch</h1>
+                <h1>Let's Talk</h1>
                 <form
                 name="contact"
                 method="post"
@@ -30,7 +30,7 @@ class ContactForm extends React.Component {
                     <label>Phone <input type="phone" name="phone" /></label>
                 </div>
                 <div>
-                    <label>Message <textarea name="message"></textarea></label>
+                    <label>Message: <textarea name="message"></textarea></label>
                 </div>
                 <div>
                     <button type="submit">Send</button>

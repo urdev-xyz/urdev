@@ -12,6 +12,20 @@ $nunito: 'Nunito', sans-serif;
     .contact-container-left {
         width: 50%;
         background: #7BC3FF;
+        color: white;
+        padding: 25px;
+        h1 {
+            font-size: 8rem;
+        }
+        h2 {
+            font-family: $nunito;
+            font-weight: 400;
+        }
+        @media screen and (max-width: 900px){
+            h1 {
+                display: none;
+            }
+        }
     }
     .contact-container-right {
         width: 50%;
