@@ -76,7 +76,7 @@ class DefaultLayout extends React.Component {
                         <nav style={this.state.navbarStyles}>
                             <div className="logo"><Link to="/"><h1>urdev</h1></Link></div>
                             <Navigation data={this.state.site.navigation} addClass="nav-desktop" navClass="site-nav-item" />
-                            <div className="contact-button nav-desktop"><button>Contact</button></div>
+                            <div className="contact-button nav-desktop"><Link to="/contact"><button>Contact</button></Link></div>
                             <div className=" nav-mobile nav-mobile-middle"></div>
                             <div className="nav-mobile nav-mobile-right">
                                 <HamburgerSliderReverse isActive={this.state.isActive} toggleButton={this.toggleButton}/>
