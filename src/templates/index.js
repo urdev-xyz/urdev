@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
 
-import { Layout, PostCard, Pagination } from '../components/common'
+import { Layout, PostCard, Pagination, ContactForm } from '../components/common'
 import { MetaData } from '../components/common/meta'
 
 
@@ -155,6 +155,10 @@ class Index extends React.Component {
                                         <h1>View All</h1>
                                     </div>
                                 </div>
+                            </div>
+                            <div className="home-section">
+                                <h1>Contact Us</h1>
+                                    <ContactForm/>
                             </div>
                         </div>
                     </Layout>
