@@ -83,6 +83,7 @@ class DefaultLayout extends React.Component {
                             </div>
                             <div className={`nav-mobile nav-mobile-menu ${this.state.isActive ? `nav-mobile-menu-active` : 'notActiveMate'}`}>
                                 <Navigation data={this.state.site.navigation} navClass="site-nav-item" />
+                                <Link to="/contact"><button>Contact</button></Link>
                             </div>
                             <div onClick={this.toggleButton.bind(this)} className={`nav-tint ${this.state.isActive ? `nav-tint-active` : 'no-tint'}`}>
 

@@ -137,7 +137,7 @@ nav {
             bottom: 0;
             width: 80%;
             z-index: 500;
-            background:#4A5568;
+            background:white;
             box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
             display: flex;
@@ -149,12 +149,24 @@ nav {
                 width: 100%;
                 .site-nav-item {
                     font-size: 2rem;
-                    color: #EBF8FF;
+                    color: $blue;
                     padding: 15px 0;
                     text-align: center;
                     width: 100%;
 
                 }
+            }
+            button {
+                font-family: $nunito;
+                font-weight: 700;
+                font-size: 2rem;
+                width: 100%;
+                height: 50px;
+                background: none;
+                color: $blue;
+            }
+            button:hover {
+                text-decoration: underline;
             }
         }
         .nav-mobile-menu-active {
