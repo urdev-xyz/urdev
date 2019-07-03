@@ -205,41 +205,6 @@ nav {
     }
 }
 
-.site-foot {
-    border-top: 5px solid $blue-light;
-    background: $blue;
-    color: white;
-    padding: 0;
-    .site-foot-nav-left {
-        justify-content: flex-start;
-        padding: 15px;
-    }
-    .Navbar {
-        .site-foot-nav-item {
-            font-size: 1.5rem;
-            margin-right: 15px;
-            color: white;
-
-        }
-    }
-
-    .logo {
-        a {
-            text-decoration: none;
-        }
-        h1 {
-            font-family: $nunito;
-            color: white;
-            text-align: left;
-            font-weight: 700;
-            margin: 0;
-
-        }
-    }
-    
-}
-
-
 .people-container {
     display: flex;
     flex-direction: column;
@@ -366,5 +331,93 @@ nav {
             }
 
         }
+    }
+}
+
+.site-foot {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+    background: $blue;
+    .site-foot-form {
+        padding: 25px 0;
+        h1 {
+            color: white;
+            text-align: center;
+            font-family: $nunito;
+
+        }
+        background: #7BC3FF;
+    }
+    form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        color: white;
+
+        label {
+            color: rgba(0, 0, 0, 0);
+            input {
+                color: $black;
+                font-size: 2rem;
+                height: 45px;
+                width: 100%;
+                padding: 0 15px;
+                border: none;
+                border-radius: 15rem 0 0 15rem;
+            }
+        }
+        button {
+            height: 45px;
+            padding: 0 25px;
+            font-size: 2rem;
+            font-family: $nunito;
+            font-weight: 700;
+            background: #4A5568;
+            color: white;
+            border-radius: 0 15rem 15rem 0;
+
+        }
+    }
+    .site-foot-links {
+        font-family: $nunito;
+        padding: 25px;
+        a {
+            text-decoration-color: white;
+            color: white;
+            font-size: 1.8rem;
+        }
+        h1 {
+            color: white;
+        }
+        h1:hover {
+            text-decoration: none;
+        }
+        .Navbar {
+            display: flex;
+            flex-direction: column;
+            width: auto;
+            .site-nav-item {
+                color: white;
+                font-size: 1.8rem;
+                width: auto;
+            }
+        }
+        .social-icons {
+            display: flex;
+            margin: 20px 0;
+            svg {
+                fill: white;
+                margin-right: 15px; 
+            }
+        }
+        span {
+            width: 100%;
+            text-align: center;
+        }
+        
     }
 }
