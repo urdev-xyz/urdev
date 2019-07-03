@@ -102,11 +102,11 @@ class DefaultLayout extends React.Component {
                         <footer className="site-foot">
                             <div className="site-foot-form">
                             <h1>Join Our Newsletter</h1>
-                            <form name="newsletter" method="post" data-netlify="true">
+                            <form name="newsletter" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
                                 <input type="hidden" name="bot-field" />
                                 <input type="hidden" name="form-name" value="contact" />
                                 <div>
-                                    <label> <input type="text" name="email" placeholder="Email"/></label>   
+                                    <label><input type="text" name="email" placeholder="Email"/></label>   
                                 </div>
                                 <div>
                                     <button type="submit">Submit</button>
