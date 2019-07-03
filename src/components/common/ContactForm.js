@@ -30,7 +30,7 @@ class ContactForm extends React.Component {
                     <label>Phone <input type="phone" name="phone" /></label>
                 </div>
                 <div>
-                    <label>Message: <textarea name="message"></textarea></label>
+                    <label>Message <textarea name="message"></textarea></label>
                 </div>
                 <div>
                     <button type="submit">Send</button>

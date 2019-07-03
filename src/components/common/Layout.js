@@ -104,7 +104,7 @@ class DefaultLayout extends React.Component {
                             <h1>Join Our Newsletter</h1>
                             <form name="newsletter" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
                                 <input type="hidden" name="bot-field" />
-                                <input type="hidden" name="form-name" value="contact" />
+                                <input type="hidden" name="form-name" value="newsletter" />
                                 <div>
                                     <label><input type="text" name="email" placeholder="Email"/></label>   
                                 </div>
