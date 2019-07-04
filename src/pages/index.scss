@@ -76,15 +76,22 @@ $nunito: 'Nunito', sans-serif;
             justify-content: center;
             align-items: center;
             width: 60%;
+            z-index: 0;
             .service-header-right-image {
                 box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+                background-position: center !important;
+                background-size: cover  !important;
+                background-repeat: no-repeat  !important;
 
             }
             #service-header-right-image-1 {
                 position: relative;
+                z-index: 0;
                 height: 40rem;
                 width: 40rem;
-                background: green;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
                 #service-header-right-image-2 {
                     position: absolute;
                     top: -4rem;
@@ -183,6 +190,24 @@ $nunito: 'Nunito', sans-serif;
                     margin-bottom: 25px;
                 }
             }
+        }
+    }
+
+    .fade-in-fast {
+        animation: fadeIn 1s forwards;
+    }
+    .fade-in-slow {
+        animation: fadeInMove 1s forwards;
+        animation-delay: .1s;
+    }
+    @keyframes fadeInMove {
+        from {
+            transform: translate(0, 0);
+            opacity: 0;
+        }
+        to {
+            transform: translate(15px, -25px);
+            opacity: 1;
         }
     }
 }
