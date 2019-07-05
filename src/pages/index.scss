@@ -129,65 +129,16 @@ $nunito: 'Nunito', sans-serif;
             justify-content: center;
             align-items: center;
             width: 60%;
+            margin-left: 15px;
+            border-left: 5px solid $blue;
             .service-section-item {
-                margin: 15px 25px;
+                margin: 15px;
                 padding: 15px;
                 background: $blue-lightest;
                 border-radius: .9rem;
 
                 h1 {
                     font-size: 2rem;
-                }
-            }
-        }
-    }
-    @media screen and (max-width: 1000px) {
-        .service-header {
-            flex-direction: column-reverse;
-            .service-header-left {
-                width: 100%;
-                padding: 25px;
-                * {
-                    text-align: center;
-                    width: 100%;
-                }
-            }
-            .service-header-right {
-                width: auto;
-                margin-bottom: 60px;
-                #service-header-right-image-1 {
-                    position: relative;
-                    height: 20rem;
-                    width: 20rem;
-                    background: green;
-                    #service-header-right-image-2 {
-                        position: absolute;
-                        top: -25px;
-                        right: -40px;
-                        height: 10rem;
-                        width: 10rem;
-                        background: blue;
-                    }
-                    #service-header-right-image-3 {
-                        
-                    }
-                }
-            }
-        }
-        .service-section {
-            flex-direction: column;
-            .service-section-left {
-                width: auto;               
-                * {
-                    text-align: left;
-                }
-            }
-            .service-section-right {
-                width: auto;
-                margin-bottom: 60px;
-                .service-section-item {
-                    margin: 0;
-                    margin-bottom: 25px;
                 }
             }
         }
@@ -210,4 +161,59 @@ $nunito: 'Nunito', sans-serif;
             opacity: 1;
         }
     }
+}
+@media screen and (max-width: 1000px) {
+    .service-container {
+        padding: 10px;
+        padding-top: 120px;
+    .service-header {
+        flex-direction: column-reverse;
+        .service-header-left {
+            width: 100%;
+            padding: 25px;
+            * {
+                text-align: center;
+                width: 100%;
+            }
+        }
+        .service-header-right {
+            width: auto;
+            margin-bottom: 60px;
+            #service-header-right-image-1 {
+                position: relative;
+                height: 20rem;
+                width: 20rem;
+                background: green;
+                #service-header-right-image-2 {
+                    position: absolute;
+                    top: -25px;
+                    right: -40px;
+                    height: 10rem;
+                    width: 10rem;
+                    background: blue;
+                }
+                #service-header-right-image-3 {
+                    
+                }
+            }
+        }
+    }
+    .service-section {
+        flex-direction: column;
+        .service-section-left {
+            width: auto;               
+            * {
+                text-align: left;
+            }
+        }
+        .service-section-right {
+            width: auto;
+            margin-bottom: 60px;
+            .service-section-item {
+                margin: 0 10px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
 }
