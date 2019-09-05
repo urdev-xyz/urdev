@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
 
-import { Layout, PostCard, Pagination, ContactForm } from '../components/common'
+import { Layout, PostCard, Pagination, ContactForm, Content } from '../components/common'
 import { MetaData } from '../components/common/meta'
 
 
@@ -60,9 +60,7 @@ class Index extends React.Component {
                     <Layout isHome={true}>
                         <div className="container">
                             <div className="home-header">
-                                <div className="home-header-background">
-                                    <video src={backgroundVid} playsInline autoPlay={true} muted={true} loop={true}></video>
-                                </div>
+                                
                                 <h1>ur</h1>
                                 <h2>Development Made Simple</h2>
                                 <div className="button-container">
@@ -145,6 +143,13 @@ class Index extends React.Component {
                                 </div>
                             </div>
                             <div className="home-section">
+                                <h1>Contact Us</h1>
+                                    <ContactForm/>
+                            </div>
+                            <div className="home-section">
+                                <Content slug="homecopy"/>
+                            </div>
+                            <div className="home-section">
                                 <h1>Recent Articles</h1>
                                 <div className="ra-container">
                                     {this.state.posts.slice(0, 3).map(({ node }) => (
@@ -155,10 +160,6 @@ class Index extends React.Component {
                                         <h1>View All</h1>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="home-section">
-                                <h1>Contact Us</h1>
-                                    <ContactForm/>
                             </div>
                         </div>
                     </Layout>

@@ -22,9 +22,11 @@ class Content extends React.Component {
                 }
                 `}
                 render={(data, props) => (
-                    <div className="Page-Content"><article dangerouslySetInnerHTML={{__html: data.allGhostPage.edges.map(element => {
+                    <div className="Page-Content">
+                        <article dangerouslySetInnerHTML={{__html: data.allGhostPage.edges.map(element => {
                             return element.node.slug === this.props.slug ? element.node.html : null
-                            }).join('')}}></article></div>
+                            }).join('')}}></article>
+                    </div>
                 )}
             />
             </>
